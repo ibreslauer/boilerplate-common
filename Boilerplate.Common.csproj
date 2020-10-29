@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Class library holding models, exceptions, validation and other common classes used by boilerplate-xamarin-app and boilerplate-core-api projects.</Description>
+    <Copyright>Ivan Breslauer</Copyright>
+    <RepositoryUrl>https://github.com/ibreslauer/boilerplate-common.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <Authors>Ivan Breslauer</Authors>
+    <PackageId>IB.Boilerplate.Common</PackageId>
+    <PackageTags>boilerplate-app, boilerplate-api, boilerplate</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Constants\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
