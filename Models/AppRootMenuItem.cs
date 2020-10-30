@@ -8,18 +8,9 @@ namespace Boilerplate.Common.Models
     {
         private string _menuText;
         private MenuItemType _menuItemType;
+        private PageNavigationMode _navigationMode;
         private Type _viewModelToLoad;
         private bool _hasSeparator;
-
-        public MenuItemType MenuItemType
-        {
-            get => _menuItemType;
-            set
-            {
-                _menuItemType = value;
-                OnPropertyChanged();
-            }
-        }
 
         public string MenuText
         {
@@ -27,6 +18,26 @@ namespace Boilerplate.Common.Models
             set
             {
                 _menuText = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public PageNavigationMode NavigationMode
+        {
+            get => _navigationMode;
+            set
+            {
+                _navigationMode = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public MenuItemType MenuItemType
+        {
+            get => _menuItemType;
+            set
+            {
+                _menuItemType = value;
                 OnPropertyChanged();
             }
         }
