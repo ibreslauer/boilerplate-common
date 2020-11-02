@@ -2,7 +2,7 @@
 
 namespace Boilerplate.Common.Models
 {
-	public abstract class PagingQueryParams
+	public class PagingQueryParams
 	{
 		public int PageNumber { get; set; } = 1;
 
